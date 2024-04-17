@@ -90,7 +90,7 @@
 
 #define kHz 1000UL                                                /* Freq. */
 #define MHz 1000000UL
-#define PLL_SYS_MHZ 135UL   // This determines overclocking. Roman originally had 270UL. lower speed=lower power consumption. but doesnt like below 135Mhz (for 14Mhz output anyway)      
+#define PLL_SYS_MHZ 270UL   // This determines overclocking. Roman originally had 270UL. lower speed=lower power consumption. but doesnt like below 135Mhz (for 14Mhz output anyway)      
 
 
                                                        /* WSPR defs. */
