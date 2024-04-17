@@ -230,7 +230,7 @@ int WSPRbeaconTxScheduler(WSPRbeaconContext *pctx, int verbose)   // called ever
     const uint32_t is_GPS_available = pctx->_pTX->_p_oscillator->_pGPStime->_time_data._u32_nmea_gprmc_count;
     const uint32_t is_GPS_active = pctx->_pTX->_p_oscillator->_pGPStime->_time_data._u8_is_solution_active;
 
-		 if (pctx->_txSched.force_xmit_for_testing) {             // && is_GPS_active 
+		/* if (pctx->_txSched.force_xmit_for_testing) {             // && is_GPS_active 
 								StampPrintf("> FORCING XMISSION! for debugging   <"); pctx->_txSched.led_mode = 2;
 								PioDCOStart(pctx->_pTX->_p_oscillator);
 								WSPRbeaconCreatePacket(pctx,0);
@@ -238,7 +238,7 @@ int WSPRbeaconTxScheduler(WSPRbeaconContext *pctx, int verbose)   // called ever
 								WSPRbeaconSendPacket(pctx);
 								return -1;
 		 }
- 
+ /*
 		 if(!is_GPS_available)
 		{
 			StampPrintf(" Waiting for GPS receiver...");pctx->_txSched.led_mode = 0;  //waiting for GPS
