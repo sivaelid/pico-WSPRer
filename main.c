@@ -4,6 +4,7 @@
 //  https://www.qrz.com/db/r2bdy
 //  PROJECT PAGE
 //  https://github.com/RPiks/pico-WSPR-tx
+//  THIS IS THE MOD COPY OF  SYSTEM BY SCC
 ///////////////////////////////////////////////////////////////////////////////
 #include <string.h>
 #include <stdio.h>
@@ -66,7 +67,7 @@ int main()
 	}
 
 	read_NVRAM();
-    StampPrintf("pico-WSPRer version: %s %s\n",__DATE__ ,__TIME__);//messages are sent to USB serial port, 115200 baud
+    StampPrintf(" SCC MOD  COPY pico-WSPRer version: %s %s\n",__DATE__ ,__TIME__);//messages are sent to USB serial port, 115200 baud
     InitPicoHW();
     PioDco DCO = {0};
 	StampPrintf("WSPR beacon init...");
